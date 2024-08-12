@@ -1,0 +1,105 @@
+body {
+  background: url("images/background.gif") center center no-repeat;
+  background-size: cover;
+}
+
+.grid {
+    width: 600px;
+    height: 600px;
+    border: 1px solid rgb(73, 251, 54);
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  }
+
+.grid div {
+    width: 30px;
+    height: 30px;
+	  float: left;
+  }
+  
+.buttonGroup
+{
+	  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-top: -600px; 
+    margin-right: 290px;
+}
+
+.start, .again, .pause{
+  font-family: 'Lobster', cursive;
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #be2ea9, #d25e23);
+  transition: background 0.3s ease; 
+}
+
+.again,.pause{
+  width: 90px;
+}
+
+.blue {
+    background: blue;
+	}
+  
+.red {
+	background: red;
+	}
+
+.green {
+    background: green;
+	}
+  
+.white {
+	background: white;
+	}
+
+.tree {
+    background: url("images/tree.jpg") center center no-repeat, rgb(80, 244, 51);
+    background-size: cover;
+}
+
+.grass {
+  background: url("images/grass.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.pizza {
+  background: url("images/donutwebp.webp") center center no-repeat;
+  background-size: cover;
+}
+
+.snakeBody {
+  background: url("images/snake_body.png") center center no-repeat;
+  background-size: cover;
+}
+
+.snakeHead {
+  background: url("images/snake_head (1).png") center center no-repeat;
+  background-size: cover;
+  transform-origin: center center;
+  transition: transform 0.5s ease;
+}
+
+.snakeHeadDied {
+  /* background: url("C:/Users/acer/Desktop/Snake_Starter Files/snake_head_dead.png") center center no-repeat; */
+  background: url("images/snake_head_dead.png") center center no-repeat;
+  background-size: cover;
+}
+
+.snakeHeadEating {
+  /* background: url("C:/Users/acer/Desktop/Snake_Starter Files/snake_head_dead.png") center center no-repeat; */
+  background: url("images/snake_head_mouth_open.png") center center no-repeat;
+  background-size: cover;
+}
+
+#score {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 30px; 
+    color: #ff0d00; 
+    margin-bottom: 10px;
+    font-weight: bold;
+}

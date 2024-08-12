@@ -1,0 +1,46 @@
+
+<html>
+<head>
+    <title>Andrei Laptev- Snake Project</title>
+    <link rel="stylesheet" href="Snake.css">
+	<script src="HelperLibrary.js"></script>
+    <script src="Snake.js"></script>
+</head>
+
+
+<body>
+    <div id="score">Score: 0</div>
+    <div id="grid_id" class="grid"></div>
+    <div class="snakeHead" id="snakeHead"></div>
+    <audio id="eating">
+        <source src="sound\eat_crunchy.mp3" type="audio/mp3">
+    </audio>
+    <audio id="gameOver">
+        <source src="sound\game-over-arcade.mp3" type="audio/mp3">
+    </audio>
+    <audio id="game" loop>
+        <source src="sound\8bit-music-for-game-68698.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="buttonGroup">
+        
+        <button onclick="game()"class="start">Start game</button>
+        <button onclick="playAgain()"class="again">Play again</button>
+        <button onclick="pause()"class="pause">Pause</button>
+<!-- 
+        <button onclick="updateDirection('up')"class="start">up</button>
+        <button onclick="updateDirection('down')"class="start">down</button>
+        <button onclick="updateDirection('right')"class="start">right</button>
+        <button onclick="updateDirection('left')"class="start">left</button> -->
+    </div>
+<!-- this is to display the board before the user presses start game -->
+    <script>
+        window.onload = function() {
+            DrawBoard();
+        };
+    </script>
+
+</body>
+</html>
+
+
